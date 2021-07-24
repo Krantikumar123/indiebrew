@@ -1,0 +1,492 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--pri-color: #664efc;
+	--sec-color: #000;
+	--tri-color: #6b6b6b;
+}
+
+body {
+	background: rgb(63,94,251);
+	background: linear-gradient(118deg, rgba(63,94,251,0.19931722689075626) 3%, rgba(227,73,126,0.16010154061624648) 18%, rgba(255,255,255,1) 89%);
+	background-repeat: no-repeat;
+}
+
+
+/*---------- header---------*/
+#hero-header {
+	width: 100%;
+}
+
+.mob-menu {
+	display: none;
+}
+
+.header {
+	padding: 2rem 8rem;
+}
+
+.content-container {
+	margin: 2rem 8rem;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: var(--sec-color);
+	font-weight: 500;
+}
+
+.nav-btn {
+	margin-left: 1.5rem;
+}
+
+.nav-btn a {
+	color: unset;
+}
+
+button {
+	padding: .8rem 1.2rem;
+	background: var(--pri-color);
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius:  8px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+button:hover {
+	background: #573dfb;
+}
+
+
+/*---------- header content---------*/
+
+.row {
+	display: grid;
+	align-items: center;
+	grid-template-areas: "headerLeft headerRight";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+.col-1 {
+	grid-area: headerLeft;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: .5rem;
+}
+
+p {
+	color: var(--tri-color);
+	margin-bottom: .5rem;
+}
+
+.header-btn {
+	margin: 1rem 0;
+}
+
+.header-btn a {
+	color: #fff;
+}
+
+.col-1 div p span {
+	color: var(--pri-color);
+	font-weight: 600;
+}
+
+.col-2 {
+	grid-area: headerRight;
+}
+
+.col-2 img {
+	width: 100%;
+}
+
+
+/*---------- header content---------*/
+
+.resources,
+.access {
+	margin-top: 4rem; 
+}
+
+.resources-row {
+	display: grid;
+	align-items: center;
+	grid-template-areas: "resourcesLeft resourcesRight";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 8rem;
+}
+
+.resources-col-1 {
+	grid-area: resourcesLeft;
+}
+
+a{
+	text-decoration: none;
+	color: var(--pri-color);
+	font-weight: 500;
+}
+
+.resources-col-2 {
+	grid-area: resourcesRight;
+}
+
+.resources-col-2 img {
+	width: 100%;
+}
+
+
+.access-row {
+	display: grid;
+	align-items: center;
+	grid-template-areas: "accessRight accessLeft";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 8rem;
+}
+
+.access-col-1 {
+	grid-area: accessRight;
+}
+
+.access-col-1 img {
+	width: 100%;
+}
+
+.access-col-2 {
+	grid-area: accessLeft;
+}
+
+/*---------- footer ---------*/
+
+.footer {
+	margin-top: 6rem;
+}
+
+.footer-row {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto (5, 1fr);
+	grid-template-areas: "footerMain siteMap footerResource Company portFolios";
+	grid-gap: 2rem;
+}
+
+.main-footer {
+	grid-area: footerMain;
+}
+
+.sitemap {
+	grid-area: siteMap;
+}
+
+.footer-resources {
+	grid-area: footerResource;
+}
+
+.company {
+	grid-area: Company;
+}
+
+.portfolios {
+	grid-area: portFolios;
+}
+
+.foot-menu ul {
+	list-style: none;
+}
+
+.foot-menu ul li {
+	margin-bottom: .6rem; 
+}
+
+.foot-menu ul li a {
+	color: var(--tri-color);
+}
+
+.foot-menu h3 {
+	margin-bottom: 1rem;
+}
+
+/*------- mobile navbar---------*/
+
+.mob-navbar {
+	position: absolute;
+	top: -400px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background: var(--pri-color);
+	border-radius: 0 0 20px 20px ;
+	transition: top .5s;
+}
+
+.mob-nav-container {
+	margin: 4rem;
+	text-align: center;
+}
+
+.mob-nav-container ul {
+	list-style-type: none;
+}
+
+.mob-nav-container ul li {
+	margin: 1rem 0;	
+}
+
+.mob-nav-container ul li a {
+	color: #fff;
+}
+
+.mob-nav-container button {
+	background: #fff;
+	color: var(--pri-color);
+	margin: 1rem 0;
+}
+
+/*------------------------- Sign up page ---------------------------*/
+
+.signup {
+	background: #f7eaf9;;
+}
+
+.back-btn a {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.back-btn div img {
+	width: 10px;
+}
+
+.back-btn div {
+	margin-right: 1rem;
+}
+
+.back-btn p {
+	font-weight: 600;
+	color: #000;
+}
+
+.signup-row {
+	display: grid;
+	align-items: center;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "signupLeft signupRight";
+	grid-gap: 4rem;
+}
+
+.signup-left {
+	grid-area: signupLeft;
+}
+
+.signup-right {
+	background: #fff;
+	border-radius: 20px 20px 0 0; 
+	grid-area: signupRight;
+	width: 400px;
+	padding: 1rem .8rem;
+}
+
+.right-content {
+	padding: 2rem;
+}
+
+.signup-right h3 {
+	margin-bottom: 2rem;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+.inputs label {
+	font-weight: 500;
+}
+
+.inputs input {
+	padding: .6rem .8rem;
+	outline: none;
+	border: 1px solid #8d8c8d;
+	border-radius: 4px;
+	margin-top: .2rem;
+}
+
+.inputs input::placeholder {
+	color: #8d8c8d;
+}
+
+.inputs p {
+	color: #000;
+	font-size: .9rem;
+}
+.checkbox {
+	display: block;
+}
+
+.signup-left div {
+	display: flex;
+}
+
+.signup-left h2 {
+	margin-bottom: 2rem;
+}
+
+.signup-left div strong {
+	color: #000;
+}
+
+.signup-left div .fas, .fab {
+	margin-right: .8rem;
+}
+
+.checkbox {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 18px auto;
+}
+
+.checkbox strong {
+	text-decoration: underline;
+	color: var(--pri-color);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	/*------ header------*/
+	.header {
+		padding: 3rem 2rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.mob-menu {
+		display: block;
+	}
+
+	/*---------- header content---------*/
+
+	.content-container {
+		margin: 1rem 2rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: .5rem;
+	}
+
+	p {
+		color: var(--tri-color);
+		margin-bottom: .5rem;
+	}
+
+	.row {
+		display: grid;
+		grid-template-areas: "headerRight" "headerLeft";
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+	}
+
+	
+
+	.resources-row {
+		grid-template-areas: "resourcesRight" "resourcesLeft";
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5rem;
+	}
+
+	.access-row {
+		grid-template-areas: "accessRight" "accessLeft";
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5rem;
+	}	
+
+	.footer-row {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto auto;
+		grid-template-areas: "footerMain footerMain" "siteMap footerResource" "Company portFolios";
+		grid-gap: 1rem;
+	}
+
+
+
+	.back-btn p {
+		display: none;
+	}
+
+	.signup-row {
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+		grid-template-areas: "signupLeft" "signupRight";
+		grid-gap: 4rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
